@@ -64,6 +64,12 @@ module.exports = {
           }]
         })
       ], 
-    mode: 'development'
-
+    mode: 'development',
+    devServer: {
+      static: {
+        directory: "./", //HERE THIS PATH GOES TO WHERE YOUR index.html is at
+      },
+      compress: true,
+      port: 8080,
+    }
 };
